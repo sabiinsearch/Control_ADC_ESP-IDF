@@ -100,7 +100,7 @@ void PWM_Task(void *pvParameter)
 
     for(;;) {
       // setLight(1968,3472,2000);     // setLight(Red, Blue, Green)   // newValue(~4096) = 4096 - (oldValue(~255) * 16)
-      setLight_with_255(237,21,81);  // funtion to pass RGB values
+      setLight_with_255(224,16,227);  // funtion to pass RGB values
     }
     //   for(int dutyCycle=0;dutyCycle<=MAX_DUTY_CYCLE;dutyCycle+=100) {
     //      setLight(dutyCycle,MAX_DUTY_CYCLE-dutyCycle,MAX_DUTY_CYCLE);
