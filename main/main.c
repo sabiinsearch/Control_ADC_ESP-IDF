@@ -18,7 +18,7 @@ void PWM_Task(void *pvParameter);
 #define LEDC_FREQUENCY          (5000) // 5 kHz frequency
 
 
-int PWM_GPIO_PINS[PWM_CHANNEL_NUM] = {8, 10, 11};           // GPIO 25 for PWM output
+int PWM_GPIO_PINS[PWM_CHANNEL_NUM] = {4, 6, 8};           // GPIO 25 for PWM output
 
 void setLight_with_255(int Red_old, int Blue_old, int Green_old) {
   int Red_new, Blue_new, Green_new; 
@@ -125,7 +125,7 @@ void PWM_Task(void *pvParameter)
          vTaskDelay(pdMS_TO_TICKS(20));    
       }
 
-
+    // vTaskDelete(NULL); // Deleting Task 
 /* **************************************************************************** */
         // for mapping 0-100 to 0-4095
         // dutyCycleValue = (dutyCycleFrom0to100 / 100.0) * MAX_DUTY_CYCLE
