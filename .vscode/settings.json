@@ -3,12 +3,12 @@
   "idf.espIdfPathWin": "d:\\softs\\ESP-IDF\\v5.5.2\\esp-idf",
   "idf.pythonInstallPath": "d:\\softs\\ESP-IDF\\tools\\tools\\idf-python\\3.11.2\\python.exe",
   "idf.openOcdConfigs": [
-    "board/esp32-wrover-kit-3.3v.cfg"
+    "board/esp32c6-ftdi.cfg"
   ],
-  "idf.portWin": "COM4",
+  "idf.portWin": "COM7",
   "idf.toolsPathWin": "d:\\softs\\ESP-IDF\\tools",
   "idf.customExtraVars": {
-    "IDF_TARGET": "esp32"
+    "IDF_TARGET": "esp32c6"
   },
   "clangd.path": "d:\\softs\\ESP-IDF\\tools\\tools\\esp-clang\\esp-19.1.2_20250312\\esp-clang\\bin\\clangd.exe",
   "clangd.arguments": [
